@@ -8,7 +8,9 @@
 // Ajuste la fonction "multiply" qui prend deux paramètres (a et b) et retourne la somme multipliée des deux paramètres.
 // Exemple : a = 2, b = 3 => 2 * 3 = 6
 
-export const multiply = (a, b) => {};
+export const multiply = (a, b) => {
+	return a * b;
+};
 
 console.info("Exercice 1 :", multiply(2, 3));
 
@@ -18,20 +20,24 @@ console.info("Exercice 1 :", multiply(2, 3));
 // Ajuste la fonction qui prend en paramètre un tableau et qui retourne le premier élément du tableau.
 // Exemple : [1, 2, 3] => 1
 
-// export const getFirstElement = () => {}
+export const getFirstElement = (array) => {
+	return array[0];
+};
 
-// console.info("Exercice 2 : ", getFirstElement([1, 2, 3]));
+console.info("Exercice 2 : ", getFirstElement([1, 2, 3]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 3
 
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit supprimer le dernier élément du tableau.
 // Exemple : [1, 2, 3] => [1, 2]
+// pop supprime le dernier élément du tableau
+export const removeLastElement = (array) => {
+	array.pop();
+	return array;
+};
 
-// export const removeLastElement = () => {
-// };
-
-// console.info("Exercice 3 : ", removeLastElement([1, 2, 3]));
+console.info("Exercice 3 : ", removeLastElement([1, 2, 3]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 4
