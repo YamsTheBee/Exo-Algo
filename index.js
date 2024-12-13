@@ -45,9 +45,11 @@ console.info("Exercice 3 : ", removeLastElement([1, 2, 3]));
 // Ajuste la fonction qui prend en paramètre un tableau comprennant des nombres et qui doit retourner la somme de tous les nombres du tableau.
 // Exemple : [1, 2, 3] => 6
 
-// export const sumArray = () => {}
+export const sumArray = (array) => {
+	return array;
+};
 
-// console.info("Exercice 4 : ", sumArray([5, 6, 7]));
+console.info("Exercice 4 : ", sumArray([5, 6, 7]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 5
@@ -55,9 +57,11 @@ console.info("Exercice 3 : ", removeLastElement([1, 2, 3]));
 //Ajuste la fonction qui prend en paramètre une string et qui doit retourner la string inversée.
 // Exemple : "Hello" => "olleH"
 
-// export const reverseString = () => {}
+export const reverseString = () => {
+	return reverseString;
+};
 
-// console.info("Exercice 5 : ", reverseString("Hello"));
+console.info("Exercice 5 : ", reverseString("Hello"));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 6
