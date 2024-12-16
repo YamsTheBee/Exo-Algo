@@ -46,7 +46,7 @@ console.info("Exercice 3 : ", removeLastElement([1, 2, 3]));
 // Exemple : [1, 2, 3] => 6
 
 export const sumArray = (array) => {
-	return array;
+	return array.reduce ((acc, num) => acc + num, 0);
 };
 
 console.info("Exercice 4 : ", sumArray([5, 6, 7]));
@@ -57,8 +57,8 @@ console.info("Exercice 4 : ", sumArray([5, 6, 7]));
 //Ajuste la fonction qui prend en paramètre une string et qui doit retourner la string inversée.
 // Exemple : "Hello" => "olleH"
 
-export const reverseString = () => {
-	return reverseString;
+export const reverseString = (input) => {
+	return input.split("").reverse().join("");
 };
 
 console.info("Exercice 5 : ", reverseString("Hello"));
@@ -69,9 +69,11 @@ console.info("Exercice 5 : ", reverseString("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit retourner le plus grand nombre du tableau.
 // Exemple : [1, 2, 3] => 3
 
-// export const getMax = () => {}
+export const getMax = () => { 
+	return 
+}
 
-// console.info("Exercice 6 : ", getMax([1, 2, 3]));
+console.info("Exercice 6 : ", getMax([1, 2, 3]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 7
