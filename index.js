@@ -105,11 +105,9 @@ console.info("Exercice 8 : ", removeVowels("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit retourner le tableau trié par ordre croissant.
 // Exemple : [1, 3, 2] => [1, 2, 3]
 
-export const sortArray = () => {
-	return array.sort 
+export const sortArray = (array) => {
+	return array.sort();
 };
-// à finir .....voir mémo "retourner le tableau trié par ordre croissant"
-
 
 console.info("Exercice 9 : ", sortArray([1, 3, 2]));
 
