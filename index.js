@@ -94,8 +94,8 @@ console.info("Exercice 7 : ", getMin([1, 2, 3]));
 // Exemple : "Hello" => "Hll"
 
 export const removeVowels = (str) => {
-	return str.replace(/[aeiouAEIOU]/g, '');
-}
+	return str.replace(/[aeiouAEIOU]/g, "");
+};
 
 console.info("Exercice 8 : ", removeVowels("Hello"));
 
@@ -105,9 +105,13 @@ console.info("Exercice 8 : ", removeVowels("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit retourner le tableau trié par ordre croissant.
 // Exemple : [1, 3, 2] => [1, 2, 3]
 
-// export const sortArray = () => {}
+export const sortArray = () => {
+	return array.sort 
+};
+// à finir .....voir mémo "retourner le tableau trié par ordre croissant"
 
-// console.info("Exercice 9 : ", sortArray([1, 3, 2]));
+
+console.info("Exercice 9 : ", sortArray([1, 3, 2]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 10
