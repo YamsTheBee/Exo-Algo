@@ -46,7 +46,7 @@ console.info("Exercice 3 : ", removeLastElement([1, 2, 3]));
 // Exemple : [1, 2, 3] => 6
 
 export const sumArray = (array) => {
-	return array.reduce ((acc, num) => acc + num, 0);
+	return array.reduce((acc, num) => acc + num, 0);
 };
 
 console.info("Exercice 4 : ", sumArray([5, 6, 7]));
@@ -69,9 +69,9 @@ console.info("Exercice 5 : ", reverseString("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit retourner le plus grand nombre du tableau.
 // Exemple : [1, 2, 3] => 3
 
-export const getMax = () => { 
-	return 
-}
+export const getMax = (array) => {
+	return Math.max(...array);
+};
 
 console.info("Exercice 6 : ", getMax([1, 2, 3]));
 
@@ -81,9 +81,11 @@ console.info("Exercice 6 : ", getMax([1, 2, 3]));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit retourner le plus petit nombre du tableau.
 // Exemple : [1, 2, 3] => 1
 
-// export const getMin = () => {}
+export const getMin = (array) => {
+	return Math.min(...array);
+};
 
-// console.info("Exercice 7 : ", getMin([1, 2, 3]));
+console.info("Exercice 7 : ", getMin([1, 2, 3]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 8
@@ -91,9 +93,11 @@ console.info("Exercice 6 : ", getMax([1, 2, 3]));
 // Ajuste la fonction qui prend en paramètre une string et qui doit retourner la string sans les voyelles.
 // Exemple : "Hello" => "Hll"
 
-// export const removeVowels = () => {}
+export const removeVowels = (str) => {
+	return str.replace(/[aeiouAEIOU]/g, '');
+}
 
-// console.info("Exercice 8 : ", removeVowels("Hello"));
+console.info("Exercice 8 : ", removeVowels("Hello"));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 9
