@@ -117,11 +117,17 @@ console.info("Exercice 9 : ", sortArray([1, 3, 2]));
 // Ajuste la fonction qui prend en paramètre une string et qui renvoie un tableau avec toutes les rotations possibles de cette string.
 // Exemple : "Hello" => ["elloH", "lloHe", "loHel", "oHell", "Hello"]
 
-// export const getStringRotations = () => {
+export const getStringRotations = (str) => {
+	const rotations = [];
+	for (let i = 0; i < str.length; i++) {
+		const rotation = str.slice(i) + str.slice(0, i);
+		rotations.push(rotation); 
+	}
+	return rotations;
+};
+console.info("Exercice 10 : ", getStringRotations("Hello"));
 
-// };
-
-// console.info("Exercice 10 : ", getStringRotations("Hello"));
+// avec beaucoup d'aide de Tgpt à revoir .... 
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 11
