@@ -148,7 +148,7 @@ console.info("Exercice 11 : ", incrementArray([1, 2, 3]));
 // Exemple : ["Hello", "World"] => [5, 5]
 
 export const getLengths = (array) => {
-	return array.map(str => str.length);
+	return array.map((str) => str.length);
 };
 
 console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
@@ -159,9 +159,10 @@ console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les premières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["H", "W"]
 
-// export const getFirstLetters = () => {}
-
-// console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
+export const getFirstLetters = () => {
+	return strings.map((str) => str[0]);
+};
+console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 14
