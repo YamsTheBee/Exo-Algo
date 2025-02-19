@@ -197,7 +197,7 @@ console.info(
 // Exemple : "Bonjour_c'est_papy" => "bonjour c'est papy"
 
 export const snake_case = (array) => {
-	return array.replace(/_/g, ' ').toLowerCase();
+	return array.replace(/_/g, " ").toLowerCase();
 };
 
 console.info("Exercice 16 : ", snake_case("Bonjour_c'est_papy"));
@@ -208,12 +208,14 @@ console.info("Exercice 16 : ", snake_case("Bonjour_c'est_papy"));
 // Ajuste la fonction qui prend en deux paramètres qui sont deux tableaux de string et qui doit retourner un tableau avec tout les éléments des deux tableaux.
 // Exemple : ["Hello", "World"] et ["Test", "Salut"] => ["Hello", "World", "Test", "Salut"]
 
-// export const mergeArrays = () => {}
+export const mergeArrays = (array1, array2) => {
+	return array1.concat(array2);
+};
 
-// console.info(
-// 	"Exercice 17 : ",
-// 	mergeArrays(["Hello", "World"], ["Test", "Example"]),
-// );
+console.info(
+	"Exercice 17 : ",
+	mergeArrays(["Hello", "World"], ["Test", "Example"]),
+);
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 18
