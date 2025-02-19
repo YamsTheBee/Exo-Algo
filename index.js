@@ -159,7 +159,7 @@ console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les premières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["H", "W"]
 
-export const getFirstLetters = () => {
+export const getFirstLetters = (strings) => {
 	return strings.map((str) => str[0]);
 };
 console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
@@ -170,9 +170,10 @@ console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les dernières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["o", "d"]
 
-// export const getLastLetters = () => {}
-
-// console.info("Exercice 14 : ", getLastLetters(["Hello", "World"]));
+export const getLastLetters = (strings) => {
+	return strings.map((str) => str[4]);
+};
+console.info("Exercice 14 : ", getLastLetters(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 15
@@ -390,3 +391,64 @@ console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 // 		"3:3",
 // 	]),
 // );
+
+/*
+Créé une fonction countLetters qui compte, dans une string donnée, le nombre de fois qu'une lettre apparait.
+
+Exemples :
+* "" et "a" -> 0
+* "a" et "a" -> 1
+* "aaaaabbbaa" et "a" -> 7
+* "bbacbaaa" et "c" -> 1
+* "bbcc" et "a" -> 0
+*/
+// function countLetters(givenString, letter) {
+// Your code here !
+// 	let count = 0;
+// 	const length = givenString.length;
+// 	for (let i = 0; i < length; i++) {
+// 		if (givenString[i] === letter) {
+// 			count = count + 1;
+// 		}
+// 	}
+// 	return count;
+// }
+const countLetters = (givenString, letter) =>
+	givenString.split("").filter((char) => char === letter).length;
+export default countLetters;
+
+/*
+Créé une fonction getFibonacciSequence qui prend un nombre n en paramètre et retourne un tableau contenant les n premiers nombres de la suite de Fibonacci.
+
+Détails
+
+* La suite de Fibonacci commence par les nombres 0 et 1.
+* Chaque nombre suivant est la somme des deux nombres précédents.
+* Par exemple, pour n = 5, la fonction devrait retourner [0, 1, 1, 2, 3].
+
+Si n est inférieur ou égal à 0, la fonction doit retourner un tableau vide []
+*/
+
+// function getFibonacciSequence(size: number): number[] {
+//   // Your code here !
+//   return [0, 1];
+// }
+
+// export default getFibonacciSequence;
+
+// function getFibonacciSequence(size: number): number[] {
+//   if (size <= 0) {
+//     return [];
+//   }
+
+//   const fibonacciSequence: number[] = [0, 1];
+
+//   for (let i = 2; i < size; i++) {
+//     const nextNumber = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
+//     fibonacciSequence.push(nextNumber);
+//   }
+
+//   return fibonacciSequence.slice(0, size);
+// }
+
+// export default getFibonacciSequence;
