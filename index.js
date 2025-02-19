@@ -170,8 +170,8 @@ console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les dernières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["o", "d"]
 
-export const getLastLetters = (strings) => {
-	return strings.map((str) => str[4]);
+export const getLastLetters = (array) => {
+	return array.map((str) => str[4]);
 };
 console.info("Exercice 14 : ", getLastLetters(["Hello", "World"]));
 
@@ -181,8 +181,8 @@ console.info("Exercice 14 : ", getLastLetters(["Hello", "World"]));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit renvoyer tout les string qui ont une longueur de 5 caractères ou plus.
 // Exemple : ["Hello", "World","Test", "Salut", "Yo"] => ["Hello", "World", "Salut"]
 
-export const filterLongStrings = (strings) => {
-	return strings.filter((str) => str.length >=5);
+export const filterLongStrings = (array) => {
+	return array.filter((str) => str.length >= 5);
 };
 
 console.info(
@@ -196,9 +196,11 @@ console.info(
 // Ajuste la fonction qui prend une chaîne de caractères en format snake_case et doit retourner une nouvelle chaîne de caractères contenant les mêmes mots, mais sans les underscores.
 // Exemple : "Bonjour_c'est_papy" => "bonjour c'est papy"
 
-// export const snake_case = () => {}
+export const snake_case = (array) => {
+	return array.replace(/_/g, ' ').toLowerCase();
+};
 
-// console.info("Exercice 16 : ", snake_case("Bonjour_c'est_papy"));
+console.info("Exercice 16 : ", snake_case("Bonjour_c'est_papy"));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 17
